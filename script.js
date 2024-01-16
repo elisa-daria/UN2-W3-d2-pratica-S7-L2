@@ -13,6 +13,7 @@ form.onsubmit = (e) => {
 saveBtn.onclick = () => {
   const name = nameOfUser.value;
   localStorage.setItem("savedName", name);
+  nameOfUser.value = "";
 };
 
 removeBtn.addEventListener("click", () => {
